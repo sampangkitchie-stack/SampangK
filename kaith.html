@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Study List</title>
+  </head>
+  <body>
+    <h1>My Subjects This Semester</h1>
+    <ul id="subjectList"></ul> <!-- Blank 1 -->
+
+    <script>
+      // Blank 2: Complete the array with your subjects
+      const subjects = ['Basic Communication', 'Introduction to Agri-Fishery Art II', '2D Digital Animation', 'Gender and Society', 'Life and Works of Rizal', 'Website Creation'];
+
+      // Blank 3: Complete the for...of loop
+      for (const subject of subjects) {
+
+        // Blank 4: Complete the log message
+        console.log('I am studying: ' + subject);
+
+        // This part is done for you!
+        let item = document.createElement('li');
+        item.innerText = 'I am studying: ' + subject;
+        document.getElementById('subjectList').appendChild(item);
+      }
+    </script>
+  </body>
+</html>
